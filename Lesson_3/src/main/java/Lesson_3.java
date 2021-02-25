@@ -28,7 +28,7 @@ public class Lesson_3 {
         public void printA () {
             synchronized (mon) {
                 try {
-                    for (int i = 0; i < 3; i++) {
+                    for (int i = 0; i < 5; i++) {
                         while (tmpCh != 'A') {
                             mon.wait();
                         }
@@ -44,7 +44,7 @@ public class Lesson_3 {
         public void printB(){
             synchronized (mon) {
                 try {
-                    for (int i = 0; i < 3; i++) {
+                    for (int i = 0; i < 5; i++) {
                         while (tmpCh != 'B') {
                             mon.wait();
                         }
@@ -60,7 +60,7 @@ public class Lesson_3 {
         public void printC () {
             synchronized (mon) {
                 try {
-                    for (int i = 0; i < 3; i++) {
+                    for (int i = 0; i < 5; i++) {
                         while (tmpCh != 'C') {
                             mon.wait();
                         }
